@@ -15,9 +15,13 @@ class SearchBar extends Component {
     this.setState({term: event.target.value})
   }
 
+  onFormSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.onFormSubmit}>
         <input
           placeholder="Get a 5 day forecast in your favorite cities"
           className=""
