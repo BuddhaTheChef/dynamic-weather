@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Dynamic Weather
+        <h1 className="main-title">Dynamic Weather</h1>
         <SearchBar />
         <WeatherList />
       </div>
