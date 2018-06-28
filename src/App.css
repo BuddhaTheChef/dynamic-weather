@@ -1,9 +1,9 @@
 html {
-  background-color: whitesmoke;
+
 }
 
 .main-title {
-  margin: 30px 0px 60px 0px;
+  margin: 50px 0px 50px 0px;
   text-align: center;
 }
 
@@ -11,30 +11,53 @@ html {
   margin: 30px 0px 30px 0px;
 }
 
+table {
+  margin:100px;
+}
+
+tbody:before {
+  line-height: 2em;
+  content:".";
+display:block;
+}
+
+.tr-content {
+  background-color: #DADEDF;
+  box-shadow: 0 13px 34px 4px rgba(0,0,0,.3);
+}
+
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
+      font-size: 18px;
 }
 
 .input-group {
-  margin: 20px 0px;
+  margin: 20px 0px 50px 0px;
 }
 
 svg {
-  height: 150px;
+  height: 160px;
+}
+
+.city-name {
+
 }
 
 td:first-of-type, td:first-of-type > div {
   height: 200px;
   width: 250px;
+  font-size: 20px;
 }
 
 .current {
   align-items: center;
   flex-direction: column;
   display: flex;
-  height: 205px;
+  width: 160px;
+  height: 256px;
+  border: solid 1px lightgray;
   justify-content: space-around;
-  background-color: lightgray;
+  background: linear-gradient(#FDC673, #8BB6DD);
   font-size: 20px;
 }
