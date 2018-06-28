@@ -12,13 +12,23 @@ html {
 }
 
 table {
-  margin:100px;
+  border-collapse: separate;
+  border-spacing: 0px 40px;
 }
 
-tbody:before {
-  line-height: 2em;
+tbody {
+
+}
+
+/* tbody:before {
+  line-height: 1em;
   content:".";
 display:block;
+} */
+
+.tr-content:before {
+  display: block;
+  line-height: 2em;
 }
 
 .tr-content {
@@ -29,11 +39,11 @@ display:block;
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
-      font-size: 18px;
+  font-size: 18px;
 }
 
 .input-group {
-  margin: 20px 0px 50px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 svg {
