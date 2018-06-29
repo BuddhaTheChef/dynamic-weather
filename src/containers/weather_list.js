@@ -24,7 +24,7 @@ class WeatherList extends Component {
       <tr className="tr-content" key={name}>
         <td><GoogleMap lon={lon} lat={lat} /><h4 className="city-name">{name}</h4></td>
         <td className="current"><h1>{n}&#8457;</h1><img alt="weather icon" src={currentIcon}/>{currentDesc}</td>
-        <td><Chart data={temps} color="green" units="&#8457;" /></td>
+        <td><Chart data={temps} color="purple" units="&#8457;" /></td>
         <td><Chart data={pressures} color="black" units="hPa" /></td>
         <td><Chart data={humiditys} color="blue" units="%" /></td>
       </tr>
@@ -35,10 +35,10 @@ class WeatherList extends Component {
     return (
       <table className="table table-hover main-table">
         <thead>
-          <tr>
+          <tr className="chart-headers">
             <th>City</th>
             <th>Current</th>
-            <th>Avg.Temp this Week (&#8457;)</th>
+            <th>Avg. Temp this Week (&#8457;)</th>
             <th>Pressure (hPa)</th>
             <th>Humidity (%)</th>
           </tr>
